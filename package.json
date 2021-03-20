@@ -1,4 +1,5 @@
 {
+  "homepage": "http://madebytommy-jpg.github.io/react_pomodoro",
   "name": "proyect_pomodoro",
   "version": "1.0.0",
   "description": "proyect pomodoro",
@@ -6,7 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development --env development"
+    "start": "webpack serve --mode development --env development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "tommy solano",
   "license": "ISC",
@@ -27,6 +30,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.1.0",
     "html-loader": "^2.1.1",
     "html-webpack-plugin": "^5.2.0",
     "mini-css-extract-plugin": "^1.3.9",
